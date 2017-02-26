@@ -16,3 +16,6 @@ Who does what?
   - Srdjan:  Web design vorschlag
   - Florian: Node.js backend idee 
   - Matthias: REST API
+
+
+MongoDB Server 37.252.120.177:27000
