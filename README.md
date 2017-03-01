@@ -19,3 +19,4 @@ Who does what?
 
 
 MongoDB Server 37.252.120.177:27000
+Chatroom: https://gitter.im/Vienna-Hacking-Group/
