@@ -1,0 +1,7 @@
+Kreuzung 					| Anzahl der defekten Tableaus 	| Anzahl Funktionsfehler
+1220 Donaufelder Straße # Josef Baumann Gasse	| 2				|	2 
+1220 Dückestraße # Arakawastraße		| 1				|	1 
+1220 Dückestraße # Prandaugasse			| 4 				|	5
+
+Schema
+Bezirk <Straße> # <Straße>			| <Nr der defekten Anlagen> | <Nummer der Funktionsfehler (max 8 pro Anlage)>
