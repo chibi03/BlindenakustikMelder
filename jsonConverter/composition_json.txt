@@ -1,0 +1,32 @@
+// OLD
+{
+	type: "Feature",
+	id: "AKUSTISCHEAMPELOGD.256",
+	geometry: {
+		type: "Point",
+		coordinates: [
+			16.272983992221093,
+			48.17758575219331
+		]
+	},
+	geometry_name: "SHAPE",
+	properties: {
+		BEZIRK: 13,
+		KREUZUNG: "Wolkersbergenstr.-JagdschloÃŸg.",
+		SE_SDO_ROWID: 256,
+		SE_ANNO_CAD_DATA: null
+	}
+}
+// NEW
+{
+	_id = INTEGER,
+	coordinates = {
+		x = geometry.coordinates[0],
+		y = geometry.coordinates[1]
+	}
+	crossing: properties.KREUZUNG,
+	oID = id,
+	district = properties.BEZIRK,
+	_verison = 1,
+	trafficLightNumbers = []
+}
