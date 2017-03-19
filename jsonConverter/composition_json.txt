@@ -21,8 +21,8 @@
 {
 	_id = INTEGER,
 	coordinates = {
-		x = coordinates[0],
-		y = coordinates[1]
+		x = geometry.coordinates[0],
+		y = geometry.coordinates[1]
 	}
 	crossing: properties.KREUZUNG,
 	oID = id,
