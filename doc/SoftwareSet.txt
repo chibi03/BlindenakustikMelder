@@ -1,0 +1,8 @@
+MongoDB IDE: Studio 3T
+Node.js IDE: Texteditor/Eclipse/Netbeans
+
+Tools to install
+MongoDB
+npm
+node.js
+
