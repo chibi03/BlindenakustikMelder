@@ -1,0 +1,36 @@
+Usecase 1:
+  - User accesses report.trafficlightissues.com
+  - sees login screen -> e-mail adresse 
+  - authenticates
+  - sees list of traffic lights 
+  - Chooses traffic light
+  - enters errors via form
+  - presses send 
+  - email is sent to MA33
+
+
+- Fehler toggles
+
+
+Features
+  - register 
+  - fake auth
+  - auswählen und speichern von fehlern
+  - Ampelnummern hinzufügen
+  - 
+
+
+extra Features
+  - tracking of the duration since the last defect report
+  - send at 12:00 each day a summary of the defects
+
+
+Frontend 
+  - Html5/CSS3/Javascript
+  - Images .svg als toggleable icons
+  - 
+
+Backend
+  - nodejs + express
+  - mongodb
+
