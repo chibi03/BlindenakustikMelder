@@ -1,0 +1,28 @@
+
+Discussed UI Design & Features to be prioritized.
+Prioritized Features:
+	- Login + Registration with fake authentication
+	- Database containing the structure depicted below
+	- Node.js backend for database connection with REST API as layer between UI and Backend
+	- Frontend design with Javascript Rest calls and HTML/CSS3 design
+
+MongoDB schema
+	crossing: {
+		_id: <Integer>,
+		originalId: <String>,
+		coordinates: {
+			x: <Double>,
+			y: <Double>
+		},
+		crossingLabel: <String>,
+		district: <Integer>,
+		trafficLightNumbers: [<Integer>],
+		_version: <Integer>	
+	}
+
+Until next Meeting:
+Samirah: Node.js lernen / Java implementierung von backend
+Julia: Arbeit mit Flo
+Srdjan: Node.js backend erweitern
+Florian: Frontend + communication with backend via REST
+Matthias: Node.js backend - kommunikation mit srdjan
