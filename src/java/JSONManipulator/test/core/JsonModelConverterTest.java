@@ -1,0 +1,26 @@
+package core;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import org.junit.Test;
+
+import model.Crossings;
+
+public class JsonModelConverterTest {
+
+	private static final String FILE_PATH = "testDowload.json";
+	
+	@Test
+	public void test() {
+		JsonModelCoverter converter = new JsonModelCoverter();
+		ArrayList<Crossings> crossings = converter.jsonToObject(FILE_PATH);
+		
+		assertEquals(907, crossings.size());
+		assertEquals(Collections.emptyList(), crossings.get(0).getTrafficLightNumbers());
+		
+	}
+
+}

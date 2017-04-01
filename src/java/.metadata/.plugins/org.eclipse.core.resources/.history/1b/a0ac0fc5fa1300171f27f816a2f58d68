@@ -1,0 +1,22 @@
+package core;
+
+import static org.junit.Assert.*;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class JsonDownloaderTest {
+
+	private static final String FILE_PATH = "testDowload.json";
+	private static final String URL = "http://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:AKUSTISCHEAMPELOGD&srsName=EPSG:4326&outputFormat=json";
+	
+	@Test
+	public void test() {
+		JSONDownloader.getJSON(URL, FILE_PATH);
+		Assert.assertTrue(Files.exists(Paths.get(FILE_PATH)));
+	}
+
+}

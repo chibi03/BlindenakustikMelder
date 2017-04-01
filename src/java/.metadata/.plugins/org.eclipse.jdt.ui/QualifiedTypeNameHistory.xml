@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="java.nio.file.Files"/>
+<fullyQualifiedTypeName name="core.JsonDownloaderTest"/>
+<fullyQualifiedTypeName name="core.JsonModelConverterTest"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="model.Crossings"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="service.IDefectService"/>
+<fullyQualifiedTypeName name="model.Defects"/>
+</qualifiedTypeNameHistroy>

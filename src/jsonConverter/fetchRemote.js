@@ -1,6 +1,6 @@
-const http = require('http')
-const fs = require('fs')
-const url = process.argv[2] || 'http://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:AKUSTISCHEAMPELOGD&srsName=EPSG:4326&outputFormat=json'
+const http = require('http');
+const fs = require('fs');
+const url = process.argv[2] || 'http://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:AKUSTISCHEAMPELOGD&srsName=EPSG:4326&outputFormat=json';
 
 http.get(url, (reply) => {
   const statusCode = reply.statusCode

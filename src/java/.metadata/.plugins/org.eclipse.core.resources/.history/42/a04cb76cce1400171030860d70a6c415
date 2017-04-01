@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>JSONManipulator</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+        <servlet-name>Calculator</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>core.MongoDBManager</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlindenAkustikMelderServlet</servlet-name>
+        <url-pattern>/defects/*</url-pattern>
+    </servlet-mapping>
+</web-app>

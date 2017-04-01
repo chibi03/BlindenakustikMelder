@@ -1,0 +1,330 @@
+!SESSION 2017-03-28 22:59:16.335 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_AT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2017-03-28 22:59:50.060
+!MESSAGE Could not acquire INavigatorContentService: Project Explorer not found.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2017-03-28 23:02:42.218
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "test [in JSONManipulator]
+  <default> (not open)
+  test (not open)".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-28 23:03:18.901
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-28 23:03:18.901
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface 2 0 2017-03-28 23:04:15.860
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:761)
+	at org.eclipse.jface.viewers.AbstractTableViewer.replace(AbstractTableViewer.java:1003)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ContentProvider.updateElement(FilteredItemsSelectionDialog.java:2795)
+	at org.eclipse.jface.viewers.AbstractTableViewer$VirtualManager.lambda$0(AbstractTableViewer.java:82)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5227)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:270)
+	at org.eclipse.swt.widgets.Table.cellDataProc(Table.java:209)
+	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:809)
+	at org.eclipse.swt.internal.gtk.OS._gtk_list_store_set(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_list_store_set(OS.java:9413)
+	at org.eclipse.swt.widgets.TableItem.setText(TableItem.java:1302)
+	at org.eclipse.jface.viewers.TableViewerRow.setText(TableViewerRow.java:114)
+	at org.eclipse.jface.viewers.ViewerCell.setText(ViewerCell.java:159)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ItemsListLabelProvider.update(FilteredItemsSelectionDialog.java:1676)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:141)
+	at org.eclipse.jface.viewers.AbstractTableViewer.doUpdateItem(AbstractTableViewer.java:382)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:474)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.refreshItem(StructuredViewer.java:1559)
+	at org.eclipse.jface.viewers.AbstractTableViewer.replace(AbstractTableViewer.java:1006)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ContentProvider.updateElement(FilteredItemsSelectionDialog.java:2795)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getVirtualSelection(AbstractTableViewer.java:486)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getSelectionFromWidget(AbstractTableViewer.java:457)
+	at org.eclipse.jface.viewers.StructuredViewer.getSelection(StructuredViewer.java:1041)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1229)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1258)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:242)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:236)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:405)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5227)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1134)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog.refresh(FilteredItemsSelectionDialog.java:968)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$RefreshJob.runInUIThread(FilteredItemsSelectionDialog.java:1393)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4536)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4154)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog.open(FilteredTypesSelectionDialog.java:471)
+	at org.eclipse.jdt.junit.wizards.NewTestCaseWizardPageOne.chooseClassToTestType(NewTestCaseWizardPageOne.java:613)
+	at org.eclipse.jdt.junit.wizards.NewTestCaseWizardPageOne.classToTestButtonPressed(NewTestCaseWizardPageOne.java:595)
+	at org.eclipse.jdt.junit.wizards.NewTestCaseWizardPageOne.access$2(NewTestCaseWizardPageOne.java:594)
+	at org.eclipse.jdt.junit.wizards.NewTestCaseWizardPageOne$3.widgetSelected(NewTestCaseWizardPageOne.java:443)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5227)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4561)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4151)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:269)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:290)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:155)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5227)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4561)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-28 23:06:59.049
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-28 23:06:59.049
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-03-29 23:04:19.296 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_AT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:05:10.496
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:08:21.062
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:10:19.405
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:10:43.377
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:11:25.940
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:14:35.040
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:14:48.845
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-03-29 23:15:09.968 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_AT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data file:/home/amsa/Dokumente/meetup/BlindenakustikMelder/src/java/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:16:04.125
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY unknown 4 0 2017-03-29 23:16:17.458
+!MESSAGE Execution of 'dbus-send --print-reply --dest=org.freedesktop.FileManager1 /org/freedesktop/FileManager1 org.freedesktop.FileManager1.ShowItems array:string:"file:/home/amsa/Dokumente/meetup/BlindenakustikMelder/src/java/JSONManipulator/" string:""' failed with return code: 1
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:16:29.809
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:17:21.913
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:17:44.410
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:17:59.655
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-03-29 23:18:08.005
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:23:09.211
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:23:09.212
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2017-03-29 23:25:52.669
+!MESSAGE Error exporting/usr/share/tomcat8/webapps/JSONManipulator.war
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error exporting/usr/share/tomcat8/webapps/JSONManipulator.war
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:150)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: java.io.FileNotFoundException: /usr/share/tomcat8/webapps/JSONManipulator.war (Keine Berechtigung)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:202)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:136)
+	... 11 more
+Caused by: java.io.FileNotFoundException: /usr/share/tomcat8/webapps/JSONManipulator.war (Keine Berechtigung)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.createOutputStream(ComponentExportOperation.java:225)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:190)
+	... 12 more
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2017-03-29 23:25:52.685
+!MESSAGE Extended Operation failure: org.eclipse.jst.j2ee.internal.archive.operations.JavaEEComponentExportOperation
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error exporting/usr/share/tomcat8/webapps/JSONManipulator.war
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:150)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: java.io.FileNotFoundException: /usr/share/tomcat8/webapps/JSONManipulator.war (Keine Berechtigung)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:202)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:136)
+	... 11 more
+Caused by: java.io.FileNotFoundException: /usr/share/tomcat8/webapps/JSONManipulator.war (Keine Berechtigung)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.createOutputStream(ComponentExportOperation.java:225)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:190)
+	... 12 more
+!SUBENTRY 1 org.eclipse.wst.common.frameworks 4 0 2017-03-29 23:25:52.685
+!MESSAGE Extended Operation failure: org.eclipse.jst.j2ee.internal.archive.operations.JavaEEComponentExportOperation
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error exporting/usr/share/tomcat8/webapps/JSONManipulator.war
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:150)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: java.io.FileNotFoundException: /usr/share/tomcat8/webapps/JSONManipulator.war (Keine Berechtigung)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:202)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:136)
+	... 11 more
+Caused by: java.io.FileNotFoundException: /usr/share/tomcat8/webapps/JSONManipulator.war (Keine Berechtigung)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.createOutputStream(ComponentExportOperation.java:225)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:190)
+	... 12 more
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:28:18.233
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:28:18.235
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:32:11.166
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:32:11.167
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:45:19.944
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 23:45:19.945
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-03-30 00:22:51.664 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_AT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2017-03-30 00:24:04.911
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-30 00:25:42.845
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-30 00:25:42.845
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-30 00:26:03.807
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-30 00:26:03.810
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

@@ -1,0 +1,10 @@
+package service;
+
+import model.Defects;
+
+public interface IDefectService {
+
+	
+	public void addDefect(Defects defect);
+	
+}

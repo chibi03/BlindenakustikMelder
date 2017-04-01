@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes>\n  <runtime id\="_usr_share_tomcat8" id-set\="true" location\="/usr/share/tomcat8" name\="tomcat8" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.80" timestamp\="0" vm-install-id\="1490734822000" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>\n</runtimes>\n

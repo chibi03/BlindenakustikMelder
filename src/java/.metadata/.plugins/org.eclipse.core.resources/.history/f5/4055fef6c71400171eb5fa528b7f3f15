@@ -1,0 +1,8 @@
+package service;
+
+import javax.ws.rs.Path;
+
+@Path("/users")
+public class IAdminService {
+
+}

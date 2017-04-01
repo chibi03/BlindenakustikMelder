@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/home/amsa/Dokumente/meetup/BlindenakustikMelder/src/java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3756696776.index
+575347203.index
+789020133.index
+1747320202.index
+2525560042.index
+51730847.index

@@ -1,0 +1,17 @@
+package service;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.Path;
+
+import model.Defects;
+
+@Path("/defects")
+public interface IDefectService {
+
+	@Path("/{id}")
+	@Consumes("application/json")
+	public void addDefect(Defects defect);
+	
+	public Defects getLatestDefects();
+
+}

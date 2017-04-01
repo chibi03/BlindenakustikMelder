@@ -1,0 +1,15 @@
+package service;
+
+import javax.ws.rs.Path;
+
+import model.Defects;
+
+@Path("/defects")
+public interface IDefectService {
+
+	
+	public void addDefect(Defects defect);
+	
+	public Defects getLatestDefects();
+
+}
